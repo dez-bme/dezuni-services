@@ -2,9 +2,10 @@
 <html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خدمات دزیونی</title>
-    <!--link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
+    <script src="script.js"></script> <!-- JavaScript for button functionality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
           font-family: Arial, sans-serif;
@@ -59,12 +60,16 @@
     <header>
         <h1>جزوه یاب</h1>
         <nav>
-            <ul>
+            <button onclick="navigateTo('index.html')">خانه</button>
+            <button onclick="navigateTo('page1.html')">جزوه یاب</button>
+            <button onclick="navigateTo('page2.html')">خدمات دانشجویی</button>
+            <button onclick="navigateTo('page3.html')">نقشه دانشگاه</button>
+            <!--ul>
                 <li><a href="index.html">خانه</a></li>
                 <li><a href="page1.html">جزوه یاب</a></li>
                 <li><a href="page2.html">خدمات دانشجویی</a></li>
                 <li><a href="page3.html">نقشه دانشگاه</a></li>
-            </ul>
+            </ul-->
         </nav>
     </header>
     <main>
