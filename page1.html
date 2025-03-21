@@ -42,14 +42,25 @@
           gap: 10px; /* Add space between buttons */
           align-items: center;
         }
-        #articleList {
+        /*#articleList {
           list-style-type: none; /* Remove bullet points */
-          padding: 0;
+          /*padding: 0;
           margin: 0;
           display: flex;
           flex-direction: column;
           align-items: justify; /* Center list items horizontally */
-          gap: 10px; /* Add space between list items */
+         /* gap: 10px; /* Add space between list items */         }
+        #articleList {
+          list-style-type: none; /* Remove bullet points */
+          padding: 0;
+          margin: 0;
+          width: 100%; /* Take full width of the parent container */
+          text-align: justify; /* Justify the text inside list items */
+        }
+
+        #articleList li {
+          width: 100%; /* Ensure list items take full width */
+          margin-bottom: 10px; /* Add space between list items */
         }
     
         .spinner {
