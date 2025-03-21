@@ -7,21 +7,8 @@
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
     <script src="script.js"></script> <!-- JavaScript for button functionality -->
     <style>
-       /* body {
-          font-family: Arial, sans-serif;
-          margin: 15px;*/
-        
-    /*body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-      /*display: flex;*/
-      /*justify-content: center;*/
-      /*align-items: center;*/
-      /*min-height: 100vh;*/
-    }*/
-                body {
+               /* General styles */
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f4f4f4; /* Light background */
@@ -34,12 +21,14 @@
             padding: 10px 20px;
             text-align: center;
         }
-            /* Wrapper for the form */
+
+        /* Wrapper for the form */
         .form-wrapper {
             display: flex;
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
             height: calc(100vh - 60px); /* Full height minus navbar height */
+            direction: ltr; /* Ensure Flexbox works correctly in RTL */
         }
 
         /* Form container */
@@ -51,6 +40,7 @@
             border-radius: 8px; /* Rounded corners */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             text-align: center; /* Center text inside the container */
+            direction: rtl; /* Reset direction for form content */
         }
 
         .form-container h2 {
