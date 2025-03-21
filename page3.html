@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات دزیونی</title>
+    <title>خدمات دانشجویی</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
     <script src="script.js"></script> <!-- JavaScript for button functionality -->
-         <style>
+    <style>
+        /* Ensure html and body take up full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         /* General styles */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             display: flex;
             flex-direction: column;
-            height: 100vh;
         }
 
         /* Navigation bar styles */
@@ -60,8 +64,8 @@
         }
 
         iframe {
-            width: 100%; /* Increase width */
-            height: 100%; /* Increase height */
+            width: 100%; /* Full width of parent */
+            height: 100%; /* Full height of parent */
             border: 2px solid #ccc;
             border-radius: 8px;
         }
@@ -80,7 +84,6 @@
         </nav>
     </header>
     <main>
-
         <!-- Map container -->
         <div class="map-container">
             <!-- Paste your Google Maps iframe code here -->
@@ -90,7 +93,6 @@
                 loading="lazy">
             </iframe>
         </div>
-
     </main>
 </body>
 </html>
