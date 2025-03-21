@@ -6,7 +6,7 @@
     <title>خدمات دزیونی</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
     <script src="script.js"></script> <!-- JavaScript for button functionality -->
-     <style>
+         <style>
         /* General styles */
         body {
             font-family: Arial, sans-serif;
@@ -18,21 +18,35 @@
         }
 
         /* Navigation bar styles */
-        .navbar {
+        header {
             background-color: #333; /* Dark background */
             color: #fff; /* White text */
             padding: 10px 20px;
             text-align: center;
         }
 
-        .navbar a {
-            color: #fff; /* White text for links */
-            text-decoration: none; /* Remove underline */
-            margin: 0 10px; /* Space between links */
+        header h1 {
+            margin: 0;
         }
 
-        .navbar a:hover {
-            text-decoration: underline; /* Underline on hover */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav ul button {
+            background-color: #444; /* Darker background for buttons */
+            color: #fff; /* White text */
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        nav ul button:hover {
+            background-color: #555; /* Slightly lighter on hover */
         }
 
         /* Map container styles */
@@ -42,11 +56,12 @@
             justify-content: center;
             align-items: center;
             background-color: #f4f4f4; /* Light background */
+            padding: 20px; /* Add some padding */
         }
 
         iframe {
-            width: 80%;
-            height: 80%;
+            width: 90%; /* Increase width */
+            height: 90%; /* Increase height */
             border: 2px solid #ccc;
             border-radius: 8px;
         }
@@ -65,13 +80,12 @@
         </nav>
     </header>
     <main>
-<!-- Map container -->
+
+        <!-- Map container -->
         <div class="map-container">
             <!-- Paste your Google Maps iframe code here -->
             <iframe
                 src="https://www.google.com/maps/d/embed?mid=1mhrMdO2SadM18we0g5SEJm2u9kxC8xE&ehbc=2E312F"
-                width="640"
-                height="480"
                 allowfullscreen=""
                 loading="lazy">
             </iframe>
