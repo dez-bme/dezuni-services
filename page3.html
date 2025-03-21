@@ -6,7 +6,7 @@
     <title>خدمات دزیونی</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS -->
     <script src="script.js"></script> <!-- JavaScript for button functionality -->
-            <style>
+     <style>
         /* General styles */
         body {
             font-family: Arial, sans-serif;
@@ -44,7 +44,7 @@
             background-color: #f4f4f4; /* Light background */
         }
 
-        #map {
+        iframe {
             width: 80%;
             height: 80%;
             border: 2px solid #ccc;
@@ -65,36 +65,17 @@
         </nav>
     </header>
     <main>
-        <!-- Map container -->
-    <div class="map-container">
-        <div id="map"></div>
-    </div>
-
-    <!-- Add your Google Maps API script -->
-    <script>
-        function initMap() {
-            // Define the location (latitude and longitude)
-            const location = { lat: -37.816279, lng: 144.953735 }; // Example: Flinders Street Station, Melbourne
-
-            // Create a map centered at the location
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15, // Zoom level
-                center: location, // Center the map
-            });
-
-            // Add a marker at the location
-            new google.maps.Marker({
-                position: location,
-                map: map,
-                title: "Flinders Street Station", // Marker title
-            });
-        }
-    </script>
-    <script
-        src="https://www.google.com/maps/d/embed?mid=1mhrMdO2SadM18we0g5SEJm2u9kxC8xE&ehbc=2E312F" width="640" height="480"
-        async
-        defer
-    ></script>
+<!-- Map container -->
+        <div class="map-container">
+            <!-- Paste your Google Maps iframe code here -->
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=1mhrMdO2SadM18we0g5SEJm2u9kxC8xE&ehbc=2E312F"
+                width="640"
+                height="480"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
 
     </main>
 </body>
